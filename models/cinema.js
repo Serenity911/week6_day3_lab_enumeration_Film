@@ -37,5 +37,11 @@ Cinema.prototype.hasMinimumLength = function(length) {
   return result.length > 0;
 };
 
+Cinema.prototype.totalRunningTime = function () {
+  let result = this.films.reduce((runningResult, film) => {
+    return runningResult + film.length
+  }, 0);
+  return result;
+};
 
 module.exports = Cinema;
