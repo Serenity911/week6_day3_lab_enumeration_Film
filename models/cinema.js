@@ -15,13 +15,13 @@ Cinema.prototype.find = function(title) {
   })
   return filmByTitle;
 };
-
-Cinema.prototype.findByGenre = function(genre) {
-  const filmByGenre = this.films.filter((film) => {
-    return film.genre === genre;
-  });
-  return filmByGenre;
-};
+//
+// Cinema.prototype.findByGenre = function(genre) {
+//   const filmByGenre = this.films.filter((film) => {
+//     return film.genre === genre;
+//   });
+//   return filmByGenre;
+// };
 
 
 Cinema.prototype.filmsByProperty = function(nameProperty, value) {
