@@ -30,4 +30,12 @@ Cinema.prototype.yearHasFilms = function(year) {
   return result.length > 0;
 };
 
+Cinema.prototype.hasMinimumLength = function(length) {
+  const result = this.films.filter((film) => {
+    return film.length > length;
+  });
+  return result.length > 0;
+};
+
+
 module.exports = Cinema;
